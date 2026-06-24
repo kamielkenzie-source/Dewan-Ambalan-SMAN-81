@@ -3,77 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dewan Ambalan SMAN 81 - Home</title>
-    <link href="https:jsdelivr.net" rel="stylesheet">
+    <title>Dewan Ambalan SMAN 81 Jakarta</title> 
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <link href="https://googleapis.com" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+        }
+        
+        .bg-pramuka-yellow {
+            background-color: #FFCC00 !important;
+        }
+        .text-pramuka-yellow {
+            color: #FFCC00 !important;
+        }
+        .btn-pramuka {
+            background-color: #FFCC00;
+            color: #000000;
+            font-weight: 600;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        .btn-pramuka:hover {
+            background-color: #e6b800;
+            color: #000000;
+        }
+        /* Efek hover untuk menu navigasi */
+        .nav-link {
+            color: #555555 !important;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: #FFCC00 !important; 
+        }
+        .card-custom {
+            border: none;
+            border-bottom: 4px solid #FFCC00; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-custom:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+        }
+    </style>
 </head>
-<body class="bg-light">
+<body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    
+    <div class="bg-pramuka-yellow py-1 text-center text-dark small fw-bold">
+        Satyaku Kudarmakan, Darmaku Kubaktikan.
+    </div>
+
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Dewan Ambalan SMAN 81</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            
+            <a class="navbar-brand d-flex align-items-center fw-bold text-dark fs-5" href="index.html">
+                <img src="images/ambalan.jpeg" alt="Logo" width="45" height="45" class="d-inline-block align-top me-3 rounded-circle border">
+                <span>Dewan Ambalan SMAN 81</span>
+            </a>
+            
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
+            
             <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <div class="navbar-nav ms-auto gap-2">
+                    <a class="nav-link active" href="index.html">Beranda</a>
                     <a class="nav-link" href="BPH.html">BPH</a>
                     <a class="nav-link" href="Mabigus.html">Mabigus</a>
                     <a class="nav-link" href="Proker.html">Proker</a>
-                    <a class="nav-link" href="Latihan Rutin.html">Latihan Rutin</a>
+                    <a class="nav-link" href="Latihan.html">Latihan</a>
                 </div>
             </div>
         </div>
     </nav>
 
-
-<header class="bg-primary text-white text-center py-5">
-        <div class="container py-3">
-            <h1 class="display-4 fw-bold">Selamat Datang di Dewan Ambalan SMAN 81</h1>
-            <p class="lead">Wadah pembentukan karakter, kepemimpinan, dan keterampilan generasi muda.</p>
+    
+    <header class="py-5 border-bottom bg-light">
+        <div class="container py-5 text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <span class="badge bg-pramuka-yellow text-dark mb-2 px-3 py-2 rounded-pill fw-bold">Situs Resmi</span>
+                    <h1 class="display-4 fw-bold text-dark mb-3">Gerakan Pramuka <br><span class="text-warning">Gugusdepan SMAN 81</span></h1>
+                    <p class="lead text-secondary mb-4">Wadah kepemimpinan, kemandirian, dan pembentukan karakter prima generasi muda di lingkungan SMAN 81 Jakarta.</p>
+                    <a href="#tentang" class="btn btn-pramuka btn-lg px-4 shadow-sm">Jelajahi Profil</a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section class="container my-5">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <h2 class="fw-bold">Tentang Dewan Ambalan</h2>
-                <p>Dewan Ambalan SMAN 81 adalah organisasi kepemudaan yang bertujuan untuk mengembangkan potensi generasi muda melalui kegiatan-kegiatan yang bermanfaat. Kami berfokus pada pembentukan karakter, kepemimpinan, dan keterampilan sosial.</p>
-        </div>
-        <div class="col-md-6">
-                <img src="images/ambalan.jpeg" alt="Dewan Ambalan" class="img-fluid rounded shadow">
+    
+    <section class="container py-5 my-4" id="tentang">
+        <div class="row align-items-center g-5">
+            <div class="col-md-7">
+                <h2 class="fw-bold mb-3">Tentang Dewan Ambalan</h2>
+                <div class="mb-3 bg-pramuka-yellow style" style="width: 60px; height: 4px;"></div>
+                <p class="text-secondary leading-relaxed">Dewan Ambalan SMAN 81 Jakarta merupakan organisasi kepanduan yang bertujuan untuk mengembangkan potensi kepemimpinan dan keterampilan sosial penegak. Kami berfokus pada pembentukan karakter mandiri yang berlandaskan Tri Satya dan Dasa Darma.</p>
+                <p class="text-secondary leading-relaxed">Melalui berbagai kegiatan internal dan eksternal, kami mencetak kader-kader muda tangguh yang siap memberikan kontribusi nyata bagi sekolah dan masyarakat luas.</p>
+            </div>
+            <div class="col-md-5 text-center d-none d-md-block">
+                
+                <div class="p-4 bg-light rounded-4 border text-center shadow-sm">
+                    <img src="images/ambalan.jpeg" alt="Dewan Ambalan" class="img-fluid rounded-3 mb-3" style="max-height: 220px;">
+                    <h6 class="fw-bold m-0 text-dark">Gugusdepan 08.121 - 08.122</h6>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-white py-5">
-        <div class="container">
-            <h2 class="fw-bold text-center fw-bold mb-4">Kegiatan</h2>
+    
+    <section class="bg-light py-5">
+        <div class="container py-4">
+            <div class="d-flex justify-content-between align-items-end mb-4">
+                <div>
+                    <h2 class="fw-bold m-0">Dokumentasi & Berita Kegiatan</h2>
+                    <div class="bg-pramuka-yellow mt-2" style="width: 60px; height: 4px;"></div>
+                </div>
+            </div>
+            
             <div class="row g-4">
+                
                 <div class="col-md-4">
-                    <div class="card border-0 shadow-sm">
-                        <img src="images/kegiatan 1.jpeg" class="card-img-top" alt="Latihan Tandu">
-                        <div class="card-body px-0">
-                            <h5 class="fw-bold">Latihan Tandu</h5>
-                            <p class="card-text text-muted">Latihan rutin untuk meningkatkan keterampilan pertolongan pertama dan kerja sama tim</p>
+                    <div class="card h-100 shadow-sm card-custom">
+                        <div class="card-body p-4">
+                            <span class="text-muted small d-block mb-2">📅 Rutin</span>
+                            <h5 class="fw-bold card-title text-dark">Latihan Kepemimpinan</h5>
+                            <p class="card-text text-secondary small">Pendalaman materi taktik lapangan, orasi, manajemen kepengurusan ambalan, dan dinamika kelompok.</p>
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-md-4">
-                    <div class="card border-0 shadow-sm">
-                        <img src="images/kegiatan 2.jpeg" class="card-img-top" alt="Siaga Bencana">
-                        <div class="card-body px-0">
-                            <h5 class="fw-bold">Siaga Bencana</h5>
-                            <p class="card-text text-muted">Latihan rutin untuk menangani bencana alam dan meningkatkan kesadaran akan bahaya</p>
+                    <div class="card h-100 shadow-sm card-custom">
+                        <div class="card-body p-4">
+                            <span class="text-muted small d-block mb-2">📅 Akbar</span>
+                            <h5 class="fw-bold card-title text-dark">Perkemahan Penerimaan Tamu</h5>
+                            <p class="card-text text-secondary small">Menyambut sekaligus melantik anggota pramuka penegak baru dalam tradisi ambalan yang sakral.</p>
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-md-4">
-                    <div class="card border-0 shadow-sm">
-                        <img src="images/kegiatan 3.jpeg" class="card-img-top" alt="Materi TKU">
-                        <div class="card-body px-0">
-                            <h5 class="fw-bold">Materi TKU</h5>
-                            <p class="card-text text-muted">Pelatihan teori dan praktek tentang keterampilan dasar dalam kegiatan ambalan</p>
+                    <div class="card h-100 shadow-sm card-custom">
+                        <div class="card-body p-4">
+                            <span class="text-muted small d-block mb-2">📅 Khusus</span>
+                            <h5 class="fw-bold card-title text-dark">Ujian SKU Bantara</h5>
+                            <p class="card-text text-secondary small">Pengujian syarat kecakapan umum secara ketat demi melahirkan penegak bantara yang berdedikasi tinggi.</p>
                         </div>
                     </div>
                 </div>
@@ -81,12 +163,15 @@
         </div>
     </section>
 
-    <footer class="bg-dark text-white text-center py-4">
-        <div class="container">
-            <p class="mb-0">&copy; 2026 Dewan Ambalan SMAN 81. All rights reserved.</p>
+    
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center text-md-between d-md-flex align-items-center">
+            <p class="mb-0 small text-muted">&copy; 2026 Dewan Ambalan SMAN 81 Jakarta. All rights reserved.</p>
+            <p class="mb-0 small text-muted mt-2 mt-md-0">Dibuat dengan Bootstrap & GitHub Pages</p>
         </div>
-    </footer>   
+    </footer>
 
-     <script src="https://jsdelivr.net"></script>
+    
+    <script src="https://jsdelivr.net"></script>
 </body>
 </html>
