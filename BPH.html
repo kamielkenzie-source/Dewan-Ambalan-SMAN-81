@@ -1,49 +1,156 @@
 <!DOCTYPE html>
 <html lang="id">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dewan Ambalan SMAN 81 - BPH</title>
-    <link href="https:jsdelivr.net" rel="stylesheet">
+    <title>BPH - Dewan Ambalan SMAN 81 Jakarta</title>
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <link href="https://googleapis.com" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+        }
+        .bg-pramuka-yellow {
+            background-color: #FFCC00 !important;
+        }
+        .nav-link {
+            color: #555555 !important;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: #FFCC00 !important;
+        }
+
+        .card-bph {
+            border: none;
+            border-top: 4px solid #FFCC00;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-bph:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+        }
+
+        .avatar-bph {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border: 3px solid #FFCC00;
+        }
+    </style>
 </head>
-<body class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+<body>
+
+    <div class="bg-pramuka-yellow py-1 text-center text-dark small fw-bold">
+        Satyaku Kudarmakan, Darmaku Kubaktikan.
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Dewan Ambalan SMAN 81</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand d-flex align-items-center fw-bold text-dark fs-5" href="index.html">
+                <img src="images/ambalan.jpg" alt="Logo" width="45" height="45" class="d-inline-block align-top me-3 rounded-circle border">
+                <span>Dewan Ambalan SMAN 81</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="index.html">Home</a>
-                    <a class="nav-link active" aria-current="page" href="BPH.html">BPH</a>
-                    <a class="nav-link" href="Mabigus.html">Mabigus</a>
-                    <a class="nav-link" href="Proker.html">Proker</a>
-                    <a class="nav-link" href="Latihan Rutin.html">Latihan Rutin</a>
+                <div class="navbar-nav ms-auto gap-2">
+                    <a class="nav-link" href="index.html">Beranda</a>
+                    <a class="nav-link active" href="bph.html">BPH</a>
+                    <a class="nav-link" href="mabigus.html">Mabigus</a>
+                    <a class="nav-link" href="proker.html">Proker</a>
+                    <a class="nav-link" href="latihan.html">Latihan</a>
                 </div>
             </div>
         </div>
     </nav>
-</body>
 
-<main class="container my-5">
-    <h2 class="fw-bold text-center mb-4">Badan Pengurus Harian (BPH)</h2>
-    <p class="text-center text-muted">Struktur organisasi masa bakti aktif ekskul Pramuka.</p>
-
-    <div class="row justify-content-center">
-        <div class="col-md-4 mb-4">
-            <div class="card border-0 shadow-sm text-center">
-                <h4 class="fw-bold">Pradana</h4>
-                <p class="text-primary fw-bold">Kamiel Kenzie</p>
-                <hr>
-                <h4 class="fw-bold">Wakil Pradana</h4>
-                <p class="text-primary fw-bold">Mahesa Bayu</p>
-            </div>
+    <header class="py-5 bg-light border-bottom text-center">
+        <div class="container py-3">
+            <h1 class="fw-bold text-dark">Badan Pengurus Harian</h1>
+            <div class="bg-pramuka-yellow mx-auto mt-2 mb-3" style="width: 60px; height: 4px;"></div>
+            <p class="lead text-secondary col-md-8 mx-auto">Struktur inti pengambil kebijakan dan penggerak roda organisasi Dewan Ambalan SMAN 81 Jakarta.</p>
         </div>
-    </div>
-</main>
+    </header>
 
-<footer class="bg-dark text-white text-center py-4 mt-5">
-        <p class="mb-0">&copy; 2026 Ekskul Pramuka. All Rights Reserved.</p>
+    <main class="container py-5">
+        
+        <section class="mb-5">
+            <h3 class="fw-bold text-center text-dark mb-4">🏆 Pradana (Ketua Ambalan)</h3>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 text-center">
+                    <div class="card h-100 p-4 shadow-sm card-bph">
+                        <img src="images/Kamiel Kenzie.jpg" class="rounded-circle avatar-bph mx-auto mb-3" alt="Pradana Putera">
+                        <h5 class="fw-bold text-dark mb-1">Kamiel Kenzie</h5>
+                        <p class="text-muted small">Pradana Putera</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card h-100 p-4 shadow-sm card-bph">
+                        <img src="images/Nadia Dwi.jpeg" class="rounded-circle avatar-bph mx-auto mb-3" alt="Pradana Puteri">
+                        <h5 class="fw-bold text-dark mb-1">Nadia Dwi</h5>
+                        <p class="text-muted small">Pradana Puteri</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h3 class="fw-bold text-center text-dark mb-4">🤝 Wakil Pradana</h3>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 text-center">
+                    <div class="card h-100 p-4 shadow-sm card-bph">
+                        <img src="images/Mahesa Bayu.jpeg" class="rounded-circle avatar-bph mx-auto mb-3" alt="Wakil Pradana Putera">
+                        <h5 class="fw-bold text-dark mb-1">Mahesa Bayu</h5>
+                        <p class="text-muted small">Wakil Pradana Putera</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card h-100 p-4 shadow-sm card-bph">
+                        <img src="images/Nayla Arifa.jpeg" class="rounded-circle avatar-bph mx-auto mb-3" alt="Wakil Pradana Puteri">
+                        <h5 class="fw-bold text-dark mb-1">Nayla Arifa</h5>
+                        <p class="text-muted small">Wakil Pradana Puteri</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-4">
+            <h3 class="fw-bold text-center text-dark mb-4">⚖️ Pemangku Adat (Penjaga Kode Etik)</h3>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 text-center">
+                    <div class="card h-100 p-4 shadow-sm card-bph">
+                        <img src="images/Devan Rafandra.jpeg" class="rounded-circle avatar-bph mx-auto mb-3" alt="Pemangku Adat Putera">
+                        <h5 class="fw-bold text-dark mb-1">Devan Rafandra</h5>
+                        <p class="text-muted small">Pemangku Adat Putera</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card h-100 p-4 shadow-sm card-bph">
+                        <img src="images/Kasih Maria.jpeg" class="rounded-circle avatar-bph mx-auto mb-3" alt="Pemangku Adat Puteri">
+                        <h5 class="fw-bold text-dark mb-1">Kasih Maria</h5>
+                        <p class="text-muted small">Pemangku Adat Puteri</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center text-md-between d-md-flex align-items-center">
+            <p class="mb-0 small text-muted">&copy; 2026 Dewan Ambalan SMAN 81 Jakarta. All rights reserved.</p>
+            <p class="mb-0 small text-muted mt-2 mt-md-0">Dibuat dengan Bootstrap & GitHub Pages</p>
+        </div>
     </footer>
+
+    
+    <script src="https://jsdelivr.net"></script>
 </body>
 </html>
